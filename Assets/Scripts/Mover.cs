@@ -4,8 +4,8 @@ public class Mover : MonoBehaviour
 {
     [SerializeField] private float _speed = 0.05f;
 
-    void Update()
+    private void Update()
     {
-        transform.Translate(_speed * Time.deltaTime * transform.forward);
+        transform.Translate(_speed * Time.deltaTime * Vector3.forward);
     }
 }
